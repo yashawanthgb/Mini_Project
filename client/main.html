@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+      <title> Home Price Prediction</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+     <link rel="stylesheet" href="app.css">
+    <!-- Favicon for the webpage -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  </head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <!-- font awesome cdn link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts -->
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>YaAi</a>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div class="menu">
+            <ul>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="services.html">Our Services</a></li>
+               <li><a href="listings.html">Property Listings</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="#">help<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="about.html">about us</a></li>
+                     <li><a href="contact.html">contact us</a></li>
+                     <li><a href="contact.html#faq">FAQ</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <ul>
+            <li><a href="#">saved <i class="far fa-heart"></i></a></li>
+            <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">login</a></li>
+                  <li><a href="register.html">register</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+<!-- header section ends -->
+
+<!-- home section starts -->
+<div class="home">
+   <section class="center">
+      <div class="Home">
+         <h2>YaAi Real Estate: Your Trusted Partner in Finding Your Dream Home</h2>
+         <p class="about-description">We offer accurate property insights, price predictions, and a user-friendly platform to make your home-buying journey easier.</p>
+      </div>
+      <form class="form">
+         <h3>Find Your Perfect Home</h3>
+
+         <h2>Area (Square Feet)</h2>
+         <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+
+         <h2>BHK</h2>
+         <div class="switch-field">
+            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+            <label for="radio-bhk-1">1</label>
+            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked />
+            <label for="radio-bhk-2">2</label>
+            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+            <label for="radio-bhk-3">3</label>
+            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+            <label for="radio-bhk-4">4</label>
+            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+            <label for="radio-bhk-5">5</label>
+         </div>
+
+         <h2>Bath</h2>
+         <div class="switch-field">
+            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+            <label for="radio-bath-1">1</label>
+            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked />
+            <label for="radio-bath-2">2</label>
+            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+            <label for="radio-bath-3">3</label>
+            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+            <label for="radio-bath-4">4</label>
+            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+            <label for="radio-bath-5">5</label>
+         </div>
+
+         <h2>Location</h2>
+         <div>
+            <select class="location" name="" id="uiLocations">
+               <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+               <option>Electronic City</option>
+               <option>Rajaji Nagar</option>
+            </select>
+         </div>
+
+         <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+         <div id="uiEstimatedPrice" class="result">
+            <h2></h2>
+         </div>
+      </form>
+   </section>
+</div>
+
+
+<!-- home section ends -->
+
+<!-- services section starts -->
+<section class="services">
+   <h1 class="heading">our services</h1>
+   <div class="box-container">
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>buy house</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>rent house</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>sell house</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>flats and buildings</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>shops and malls</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>24/7 service</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+   </div>
+</section>
+<!-- services section ends -->
+
+<!-- listings section starts -->
+<section class="listings">
+   <h1 class="heading">latest listings</h1>
+   <div class="box-container">
+      <!-- Repeat the listing boxes as needed -->
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>Yashwanth</p>
+               <span>10-12-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>house</span><span>sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-1.webp" alt="">
+         </div>
+         <h3 class="name">modern flats and apartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>RR,Banglore, india -560023</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">view property</a>
+      </div>
+      <!-- Other listing items here -->
+   </div>
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.html" class="inline-btn">view all</a>
+   </div>
+</section>
+<!-- listings section ends -->
+
+<!-- footer section starts -->
+<footer class="footer">
+   <section class="flex">
+      <div class="box">
+         <a href="tel:9591807245"><i class="fas fa-phone"></i><span>9591807245</span></a>
+         <a href="tel:9591807245"><i class="fas fa-phone"></i><span>9448002324</span></a>
+         <a href="mailto:aishwaryab887@gmail.com"><i class="fas fa-envelope"></i><span>aishwaryab887@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Banglore, india - 560023</span></a>
+      </div>
+      <div class="box">
+         <a href="home.html"><span>home</span></a>
+         <a href="about.html"><span>about</span></a>
+         <a href="contact.html"><span>contact</span></a>
+         <a href="listings.html"><span>all listings</span></a>
+         <a href="#"><span>saved properties</span></a>
+      </div>
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+      </div>
+   </section>
+   <div class="credit">&copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</div>
+</footer>
+<!-- footer section ends -->
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

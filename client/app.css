@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Background Image */
+.img {
+  background-image: url('file:///C:/Users/siriw/OneDrive/Desktop/RPP-20241224T183914Z-001/RPP/client/img/image.png'); /* Local image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Form Container */
+.form {
+  background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%; /* Full width for smaller screens */
+  text-align: center; /* Center text */
+  position: relative;
+  z-index: 2; /* Ensure form is above the background */
+}
+
+/* Headings */
+h2 {
+  color: #333; /* Dark text color */
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Slightly larger font size */
+}
+
+/* Input Fields */
+input[type="text"], select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #ff5722; /* Change border color on focus */
+}
+
+/* Radio Button Styles */
+.switch-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.switch-field input {
+  display: none; /* Hide radio buttons */
+}
+
+.switch-field label {
+  background: #e0e0e0; /* Light gray background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.switch-field input:checked + label {
+  background: #ff5722; /* Highlight color for selected option */
+  color: white; /* White text for selected option */
+}
+
+/* Submit Button */
+button.submit {
+  background-color: #ff5722; /* Button color */
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width button */
+}
+
+button.submit:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Result Display */
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333; /* Dark text color for result */
+  font-weight: bold; /* Bold text for emphasis */
+}
