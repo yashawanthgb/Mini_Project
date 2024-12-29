@@ -28,14 +28,14 @@ def load_saved_artifacts():
     global  __data_columns
     global __locations
 
-    with open("C:/Users/siriw/OneDrive/Desktop/RPP-20241224T183914Z-001/RPP/server/artifacts/columns.json", "r") as f:
+    with open("C:/Users/aishw/Desktop/mini_project/erver/artifacts/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
 
     global __model
 
     if __model is None:
-        with open('C:/Users/siriw/OneDrive/Desktop/RPP-20241224T183914Z-001/RPP/model/banglore_home_prices_model.pickle', 'rb') as f:
+        with open('C:/Users/aishw/Desktop/mini_project/server/artifacts/banglore_home_prices_model.pickle', 'rb') as f:
             __model = pickle.load(f)
     print("loading saved artifacts...done")
 

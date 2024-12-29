@@ -17,6 +17,30 @@ body {
   align-items: center; /* Center vertically */
 }
 
+.box {
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: space-around; /* Space links evenly */
+  align-items: center; /* Center items vertically */
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.box a  {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  padding: 10px 15px; /* Add padding around links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+.box a:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
 /* Form Container */
 .form {
   background: rgba(255, 255, 255, 0.9); /* White background with transparency */
